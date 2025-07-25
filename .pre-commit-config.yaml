@@ -1,0 +1,18 @@
+repos:
+  - repo: local
+    hooks:
+      - id: ruff-format-check
+        name: ruff format check
+        entry: uv run ruff format --check
+        language: system
+        always_run: true
+        verbose: true
+        pass_filenames: false
+
+      - id: ruff-isort-check
+        name: ruff isort check
+        entry: uv run ruff check --select I
+        language: system
+        always_run: true
+        verbose: true
+        pass_filenames: false
