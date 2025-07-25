@@ -45,14 +45,10 @@ import asyncio
 import os
 from uuid import uuid4
 
-from dotenv import load_dotenv
 from loguru import logger
 
 from src.client import ProductClient
 from src.models import Product
-
-load_dotenv()
-
 
 async def main():
     # initialize the client with your refresh token
