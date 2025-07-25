@@ -1,0 +1,36 @@
+# env config
+.env
+
+#virtualenv
+.venv
+
+# Notebooks
+*.ipynb
+
+# GCP cred
+.credentials
+
+# requirements
+requirements.txt
+
+# terraform artifacts
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# vs code settings
+.vscode
+
+# log files
+*.log
+
+#jwt token file
+.dx_heroes_token.json
+
