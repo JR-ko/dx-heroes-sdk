@@ -29,6 +29,7 @@ async def perform_request(
             response = await client.request(
                 method, url, headers=get_headers(token), json=data
             )
+            logger.info(response.status_code)
             response.raise_for_status()
             return response.json()
     except httpx.HTTPStatusError as e:
